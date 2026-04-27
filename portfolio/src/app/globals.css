@@ -1,0 +1,90 @@
+:root {
+  --text-primary: #1F2937;
+  --text-secondary: #6B7280;
+  --header-bg: #F3F4F6;
+  --header-text: #111827;
+
+  --border-light: #E5E7EB;
+  --border-strong: #D1D5DB;
+
+  --awareness: #2563EB;
+  --engagement: #10B981;
+  --humor: #F59E0B;
+  --amplification: #7C3AED;
+  --social-proof: #DC2626;
+  --visual: #0EA5E9;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-primary);
+  background: var(--header-bg);
+}
+
+.dark {
+  --text-primary: #F3F4F6;
+  --text-secondary: #9CA3AF;
+  --header-bg: #1F2937;
+  --header-text: #F9FAFB;
+
+  --border-light: #374151;
+  --border-strong: #4B5563;
+
+  background: #111827;
+  color: var(--text-primary);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.prose {
+  color: var(--text-primary);
+}
+
+.prose h1, 
+.prose h2, 
+.prose h3, 
+.prose h4 {
+  color: var(--text-primary);
+}
+
+.prose p {
+  color: var(--text-secondary);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+/* Dark mode image treatment */
+.dark img {
+  filter: brightness(0.9) contrast(1.1);
+  transition: filter 0.3s ease;
+}
+
+@layer utilities {
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in-out forwards;
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+}
