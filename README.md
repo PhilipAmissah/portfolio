@@ -21,11 +21,8 @@ npm run build
 ```
 
 Deployment
-Optimized for Vercel. Upload the project root (excluding `.next/` and `node_modules/`) for deployment.
+Optimized for Vercel. 
 
 License
 MIT License.
 
----
-
-If you want an even shorter version, a more visual one, or one with badges, I can generate that too.
